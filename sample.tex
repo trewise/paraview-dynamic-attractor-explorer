@@ -1,0 +1,205 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{Tre' Wise}
+\tagline{Ph.D. Student in Mathematics | Applied Mathematics, Statistics, AI \& Machine Learning}
+
+\photoR{2.8cm}{Globe_High}
+
+\personalinfo{%
+  \email{trewisetre@outlook.com}
+  \email{C00147751@outlook.com}
+  \phone{504-532-2551}
+  \location{New Orleans, Louisiana}
+  \printinfo{\faLinkedin}{linkedin.com/in/trewise}
+  \printinfo{\faGithub}{github.com/trewise}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{Professional Summary}
+
+Ph.D. student in Mathematics at the University of Louisiana at Lafayette with strong foundations in applied mathematics, statistical analysis, optimization, numerical methods, and scientific computing. Experienced in quantitative research, mathematical modeling, and software development using Python, MATLAB, and C++. Interested in artificial intelligence, machine learning, data science, and computational systems.
+
+\cvsection{Experience}
+
+\cvevent{Mathematics Tutor}{Southern University at New Orleans}{January 2024 -- Present}{New Orleans, Louisiana, USA}
+\begin{itemize}
+\item Provide one-on-one and small-group instruction in Algebra, Pre-Calculus, Trigonometry, Calculus I--III, Statistics, Differential Equations, and Linear Algebra.
+\item Assist students with mathematical problem solving, analytical reasoning, and examination preparation.
+\item Support undergraduate student success through individualized academic mentoring and tutoring.
+\end{itemize}
+
+\divider
+
+\cvevent{Financial Management Technician}{U.S. Army}{May 2014 -- May 2019}{New Orleans, Louisiana, USA}
+\begin{itemize}
+\item Managed financial records, budgeting support, billing procedures, and cash-flow documentation.
+\item Developed discipline, leadership, attention to detail, and operational accountability in a structured professional environment.
+\item Supported administrative and financial operations requiring accuracy, confidentiality, and consistency.
+\end{itemize}
+
+\cvsection{Research Experience}
+
+\cvevent{Environmental Studies on White and Brown Mice}{Brookhaven National Laboratory}{Summer 2016}{Upton, New York}
+\begin{itemize}
+\item Conducted ecological field research involving the collection and statistical analysis of white and brown mouse population data under varying vegetation-density conditions.
+\item Applied quantitative methods to investigate relationships between environmental factors and population characteristics.
+\end{itemize}
+
+\divider
+
+\cvevent{Two Explicit Formulas for Identifying COVID-19 Parameters from Real Data for USA}{\href{https://www.researchgate.net/publication/379664503_Two_explicit_formulas_for_identifying_COVID-19_parameters_from_real_data_for_USA}{\faLink\ ResearchGate Publication}}{2023 -- 2024}{New Orleans, Louisiana}
+\begin{itemize}
+\item Developed and analyzed numerical methods for estimating epidemiological parameters from real-world COVID-19 data.
+\item Investigated techniques for identifying effective and basic reproduction numbers, denoted as Re and R0, in long-term epidemic models.
+\item Applied mathematical modeling, statistical analysis, and computational methods to infectious disease dynamics.
+\end{itemize}
+
+\cvsection{Publications}
+
+\cvevent{Two Explicit Formulas for Identifying COVID-19 Parameters from Real Data for USA}{Research Publication}{2024}{}
+\begin{itemize}
+\item Published research introducing numerical techniques for identifying epidemiological parameters from COVID-19 data.
+\item Available through ResearchGate.
+\end{itemize}
+
+\cvsection{Technical Projects}
+
+\cvevent{AI-Powered Sprint Analysis System}{Personal Project}{2025 -- Present}{}
+\begin{itemize}
+\item Designing a computer-vision-based system for automated race timing and athlete tracking.
+\item Investigating machine learning methods for athlete identification and motion analysis.
+\item Developing software architecture using Python and computer vision techniques.
+\end{itemize}
+
+\divider
+
+\cvevent{Baseball Analytics Drone Platform}{Personal Project}{2025 -- Present}{}
+\begin{itemize}
+\item Designing an autonomous aerial platform for tracking baseball trajectories and player motion.
+\item Integrating computer vision, sensor fusion, and real-time analytics concepts.
+\item Investigating AI-assisted motion analysis for sports performance evaluation.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Technical Skills}
+
+\cvtag{Python}
+\cvtag{C++}
+\cvtag{MATLAB}
+\cvtag{\LaTeX}
+\cvtag{Linux}
+\cvtag{Git}
+
+\smallskip
+
+\cvtag{Machine Learning}
+\cvtag{Data Analysis}
+\cvtag{Statistical Modeling}
+\cvtag{Numerical Methods}
+
+\smallskip
+
+\cvtag{Linear Algebra}
+\cvtag{Probability}
+\cvtag{Statistics}
+\cvtag{Differential Equations}
+
+\smallskip
+
+\cvtag{Research}
+\cvtag{Scientific Computing}
+
+\cvsection{Education}
+
+\cvevent{Ph.D. in Mathematics}{University of Louisiana at Lafayette}{Aug. 2024 -- Present}{}
+\begin{itemize}
+\item Expected graduation: 2028
+\end{itemize}
+
+\divider
+
+\cvevent{B.S. in Mathematics}{Southern University at New Orleans}{Sept. 2020 -- May 2024}{}
+
+\divider
+
+\cvevent{B.S. in Biology}{Southern University at New Orleans}{Sept. 2020 -- May 2024}{}
+
+\cvsection{Languages \& Tools}
+
+\cvskill{English}{5}
+\divider
+
+\cvskill{Python}{4}
+\divider
+
+\cvskill{MATLAB}{4}
+\divider
+
+\cvskill{C++}{4}
+\divider
+
+\cvskill{\LaTeX}{3.5}
+\divider
+
+\cvskill{Russian}{2.5}
+
+\cvsection{Professional Strengths}
+
+\cvtag{Problem Solving}
+\cvtag{Leadership}
+\cvtag{Self-Teaching}
+\cvtag{Research Discipline}
+\cvtag{Detail-Oriented}
+\cvtag{Mathematical Reasoning}
+
+\end{paracol}
+
+\end{document}
