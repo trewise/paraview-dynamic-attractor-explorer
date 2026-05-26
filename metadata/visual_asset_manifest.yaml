@@ -1,0 +1,29 @@
+title: Dynamic Attractor Observatory Visual Asset Manifest
+static_preview_count: 11
+gallery_count: 3
+gif_count: 3
+static_previews:
+- outputs/screenshots/aizawa_preview.png
+- outputs/screenshots/chen_preview.png
+- outputs/screenshots/dadras_preview.png
+- outputs/screenshots/four_wing_preview.png
+- outputs/screenshots/halvorsen_preview.png
+- outputs/screenshots/lorenz_preview.png
+- outputs/screenshots/rossler_preview.png
+- outputs/screenshots/sprott_a_preview.png
+- outputs/screenshots/sprott_b_preview.png
+- outputs/screenshots/sprott_c_preview.png
+- outputs/screenshots/thomas_preview.png
+galleries:
+- outputs/galleries/lorenz_rho_contact_sheet.png
+- outputs/galleries/rossler_c_contact_sheet.png
+- outputs/galleries/thomas_b_contact_sheet.png
+gifs:
+- outputs/animations/lorenz_orbit_preview.gif
+- outputs/animations/rossler_orbit_preview.gif
+- outputs/animations/thomas_orbit_preview.gif
+notes:
+- PNG and GIF previews are generated with matplotlib for portfolio display.
+- ParaView Python scripts remain available for high-quality scientific rendering.
+- Final ParaView screenshots should replace or supplement these previews when ParaView
+  rendering is complete.
