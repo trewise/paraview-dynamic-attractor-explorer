@@ -2,7 +2,7 @@
 
 ## Goal
 
-Package the project as a complete work sample for ParaView/scientific visualization opportunities.
+Package the project as a complete work sample for ParaView and scientific visualization opportunities.
 
 ## Final Deliverables
 
@@ -10,30 +10,38 @@ Package the project as a complete work sample for ParaView/scientific visualizat
 - Generated attractor datasets
 - Automated exporters
 - ParaView state files
-- ParaView Python traces
 - Rendered images
-- Animated fly-through video
+- Animation exports
 - Technical documentation
 - Architecture diagrams
 - Screenshots for README
-- Handshake submission assets
+- Portfolio assets
 
-## Application Assets
+## Assets Already Produced
 
-- short_project_description.txt
-- technical_summary.txt
-- skills_demonstrated.txt
-- portfolio_link_text.txt
-- screenshots_for_application
+- Gallery contact sheets
+- Trajectory screenshots
+- Density screenshots
+- Comparison renders
+- Orbit animation exports
+- Reusable state files
+- Workflow documentation
+
+## Remaining Work
+
+- README refinement
+- Portfolio packaging
+- Application assets
+- Repository cleanup
+- Final release review
 
 ## Completion Criteria
 
 - GitHub repository looks polished.
-- A reviewer can understand the project in under 60 seconds.
-- A technical reviewer can reproduce the workflow.
+- A reviewer understands the project quickly.
+- A technical reviewer can reproduce results.
 - The project demonstrates real ParaView capability.
-- The project is suitable to share in a Handshake application.
 
 ## Status
 
-NOT STARTED
+IN PROGRESS

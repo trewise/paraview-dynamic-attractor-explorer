@@ -15,24 +15,29 @@ Create portfolio-quality visual outputs that demonstrate depth of scientific vis
 - README preview images
 - Short portfolio video
 
-## Visual Targets
+## Completed Outputs
 
-The final visuals should show:
+- Density render gallery
+- Trajectory render gallery
+- Comparison gallery
+- Preview screenshots
+- Orbit animation MP4
+- Preview GIF exports
+- Reusable workflow state files
 
-- chaotic structure
-- trajectory flow
-- density concentration
-- parameter sensitivity
-- comparative morphology
-- spatial complexity
-- scientific clarity
+## Remaining Work
+
+- Fly-through animations
+- Parameter sweep animations
+- Portfolio-quality final renders
+- Final image selection
 
 ## Completion Criteria
 
 - Screenshots are clean and professional.
 - Animations render correctly.
 - Images are usable in README.
-- Outputs support Handshake submission.
+- Outputs support portfolio submission.
 
 ## Status
 
