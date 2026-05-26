@@ -1,0 +1,166 @@
+name: rossler_c
+created_utc: '2026-05-26T05:35:35.302104+00:00'
+system_name: rossler
+parameter_name: c
+values:
+- 3.5
+- 4.5
+- 5.7
+- 7.0
+- 8.5
+- 10.0
+dataset_count: 6
+t_final: 60.0
+dt: 0.01
+density_resolution: 32
+datasets:
+- dataset_name: rossler_c_3p5
+  system_name: rossler
+  parameter_name: c
+  parameter_value: 3.5
+  files:
+    csv: datasets/sweeps/rossler_c/rossler_c_3p5/rossler_c_3p5_trajectory.csv
+    trajectory_vtp: datasets/sweeps/rossler_c/rossler_c_3p5/rossler_c_3p5_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/rossler_c/rossler_c_3p5/rossler_c_3p5_point_cloud.vtp
+    density_vti: datasets/sweeps/rossler_c/rossler_c_3p5/rossler_c_3p5_density.vti
+    metadata: datasets/sweeps/rossler_c/rossler_c_3p5/rossler_c_3p5_metadata.json
+  bounds:
+    x:
+    - -5.571764561442193
+    - 7.075474534620597
+    y:
+    - -6.622449820540053
+    - 4.777840110475835
+    z:
+    - 0.0
+    - 8.284012693289519
+  time:
+    start: 0.0
+    end: 60.0
+    steps: 6001
+    dt: 0.01
+- dataset_name: rossler_c_4p5
+  system_name: rossler
+  parameter_name: c
+  parameter_value: 4.5
+  files:
+    csv: datasets/sweeps/rossler_c/rossler_c_4p5/rossler_c_4p5_trajectory.csv
+    trajectory_vtp: datasets/sweeps/rossler_c/rossler_c_4p5/rossler_c_4p5_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/rossler_c/rossler_c_4p5/rossler_c_4p5_point_cloud.vtp
+    density_vti: datasets/sweeps/rossler_c/rossler_c_4p5/rossler_c_4p5_density.vti
+    metadata: datasets/sweeps/rossler_c/rossler_c_4p5/rossler_c_4p5_metadata.json
+  bounds:
+    x:
+    - -7.094862596386019
+    - 8.996881999757658
+    y:
+    - -8.41740301425094
+    - 6.101194445771768
+    z:
+    - 0.0
+    - 13.414934423622245
+  time:
+    start: 0.0
+    end: 60.0
+    steps: 6001
+    dt: 0.01
+- dataset_name: rossler_c_5p7
+  system_name: rossler
+  parameter_name: c
+  parameter_value: 5.7
+  files:
+    csv: datasets/sweeps/rossler_c/rossler_c_5p7/rossler_c_5p7_trajectory.csv
+    trajectory_vtp: datasets/sweeps/rossler_c/rossler_c_5p7/rossler_c_5p7_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/rossler_c/rossler_c_5p7/rossler_c_5p7_point_cloud.vtp
+    density_vti: datasets/sweeps/rossler_c/rossler_c_5p7/rossler_c_5p7_density.vti
+    metadata: datasets/sweeps/rossler_c/rossler_c_5p7/rossler_c_5p7_metadata.json
+  bounds:
+    x:
+    - -8.49851991834381
+    - 10.838850171630627
+    y:
+    - -10.073185172714421
+    - 7.316654352718504
+    z:
+    - 0.0
+    - 17.364286974749277
+  time:
+    start: 0.0
+    end: 60.0
+    steps: 6001
+    dt: 0.01
+- dataset_name: rossler_c_7p0
+  system_name: rossler
+  parameter_name: c
+  parameter_value: 7.0
+  files:
+    csv: datasets/sweeps/rossler_c/rossler_c_7p0/rossler_c_7p0_trajectory.csv
+    trajectory_vtp: datasets/sweeps/rossler_c/rossler_c_7p0/rossler_c_7p0_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/rossler_c/rossler_c_7p0/rossler_c_7p0_point_cloud.vtp
+    density_vti: datasets/sweeps/rossler_c/rossler_c_7p0/rossler_c_7p0_density.vti
+    metadata: datasets/sweeps/rossler_c/rossler_c_7p0/rossler_c_7p0_metadata.json
+  bounds:
+    x:
+    - -9.714380076163314
+    - 12.512907215882821
+    y:
+    - -11.508270852741699
+    - 8.366733111096133
+    z:
+    - 0.0
+    - 19.385090715280402
+  time:
+    start: 0.0
+    end: 60.0
+    steps: 6001
+    dt: 0.01
+- dataset_name: rossler_c_8p5
+  system_name: rossler
+  parameter_name: c
+  parameter_value: 8.5
+  files:
+    csv: datasets/sweeps/rossler_c/rossler_c_8p5/rossler_c_8p5_trajectory.csv
+    trajectory_vtp: datasets/sweeps/rossler_c/rossler_c_8p5/rossler_c_8p5_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/rossler_c/rossler_c_8p5/rossler_c_8p5_point_cloud.vtp
+    density_vti: datasets/sweeps/rossler_c/rossler_c_8p5/rossler_c_8p5_density.vti
+    metadata: datasets/sweeps/rossler_c/rossler_c_8p5/rossler_c_8p5_metadata.json
+  bounds:
+    x:
+    - -13.06164731490197
+    - 16.246215020303858
+    y:
+    - -15.463952286307213
+    - 11.257850985168595
+    z:
+    - 0.0
+    - 42.87982305492413
+  time:
+    start: 0.0
+    end: 60.0
+    steps: 6001
+    dt: 0.01
+- dataset_name: rossler_c_10p0
+  system_name: rossler
+  parameter_name: c
+  parameter_value: 10.0
+  files:
+    csv: datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_trajectory.csv
+    trajectory_vtp: datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_point_cloud.vtp
+    density_vti: datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_density.vti
+    metadata: datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_metadata.json
+  bounds:
+    x:
+    - -15.583130577035506
+    - 19.08196734171849
+    y:
+    - -18.444431609697634
+    - 13.434515593698219
+    z:
+    - 0.0
+    - 60.18077665970022
+  time:
+    start: 0.0
+    end: 60.0
+    steps: 6001
+    dt: 0.01

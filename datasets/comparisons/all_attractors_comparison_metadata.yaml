@@ -1,0 +1,33 @@
+name: all_attractors_comparison
+dataset_count: 11
+attractors:
+- id: 0
+  name: aizawa
+- id: 1
+  name: chen
+- id: 2
+  name: dadras
+- id: 3
+  name: four_wing
+- id: 4
+  name: halvorsen
+- id: 5
+  name: lorenz
+- id: 6
+  name: rossler
+- id: 7
+  name: sprott_a
+- id: 8
+  name: sprott_b
+- id: 9
+  name: sprott_c
+- id: 10
+  name: thomas
+stride: 10
+files:
+  comparison_vtp: datasets/comparisons/all_attractors_comparison.vtp
+  comparison_csv: datasets/comparisons/all_attractors_comparison.csv
+paraview_notes:
+- Open the comparison VTP in ParaView.
+- Color by attractor_id.
+- Use Glyph or Point Gaussian representation for a multi-system overview.

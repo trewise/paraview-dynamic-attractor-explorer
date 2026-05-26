@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from dataclasses import replace
 from pathlib import Path
 
 from src.attractors import get_system
@@ -22,9 +23,24 @@ def generate_attractor_dataset(
     dt: float | None = None,
     density_resolution: int = 64,
     include_density: bool = True,
+    parameter_overrides: dict[str, float] | None = None,
+    output_name: str | None = None,
 ) -> dict[str, Path]:
     """Generate CSV, VTP, VTI, and metadata files for one attractor."""
-    system = get_system(name)
+    base_system = get_system(name)
+    parameters = dict(base_system.parameters)
+
+    if parameter_overrides:
+        unknown = set(parameter_overrides).difference(parameters)
+        if unknown:
+            raise KeyError(
+                f"Unknown parameter override(s) for {base_system.name}: {sorted(unknown)}"
+            )
+        parameters.update(parameter_overrides)
+
+    dataset_name = output_name or base_system.name
+    system = replace(base_system, name=dataset_name, parameters=parameters)
+
     t_final = system.default_t_final if t_final is None else t_final
     dt = system.default_dt if dt is None else dt
 

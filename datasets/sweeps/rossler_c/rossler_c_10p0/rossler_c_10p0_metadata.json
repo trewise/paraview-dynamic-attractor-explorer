@@ -1,0 +1,66 @@
+{
+  "name": "rossler_c_10p0",
+  "created_utc": "2026-05-26T05:35:35.301533+00:00",
+  "parameters": {
+    "a": 0.2,
+    "b": 0.2,
+    "c": 10.0
+  },
+  "initial_state": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 60.0,
+    "steps": 6001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -15.583130577035506,
+      19.08196734171849
+    ],
+    "y": [
+      -18.444431609697634,
+      13.434515593698219
+    ],
+    "z": [
+      0.0,
+      60.18077665970022
+    ]
+  },
+  "files": {
+    "csv": "datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_trajectory.csv",
+    "trajectory_vtp": "datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_trajectory.vtp",
+    "point_cloud_vtp": "datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_point_cloud.vtp",
+    "density_vti": "datasets/sweeps/rossler_c/rossler_c_10p0/rossler_c_10p0_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -18.356338410535827,
+      -20.9947473859693,
+      -4.8144621327760175
+    ],
+    "max_bounds": [
+      21.855175175218807,
+      15.984831369969887,
+      64.99523879247624
+    ],
+    "spacing": [
+      1.2566097995548322,
+      1.1556118361230996,
+      2.181553153914133
+    ],
+    "max_density": 178.0
+  },
+  "paraview_notes": [
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
+  ]
+}

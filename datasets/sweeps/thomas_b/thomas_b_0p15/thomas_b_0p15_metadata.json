@@ -1,0 +1,64 @@
+{
+  "name": "thomas_b_0p15",
+  "created_utc": "2026-05-26T05:35:36.054409+00:00",
+  "parameters": {
+    "b": 0.15
+  },
+  "initial_state": [
+    0.1,
+    0.0,
+    0.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 70.0,
+    "steps": 7001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -2.6038719268775137,
+      4.593629667247069
+    ],
+    "y": [
+      -3.1884943527581675,
+      4.210412185185094
+    ],
+    "z": [
+      -4.434253942476036,
+      3.5376837269002785
+    ]
+  },
+  "files": {
+    "csv": "datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_trajectory.csv",
+    "trajectory_vtp": "datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_trajectory.vtp",
+    "point_cloud_vtp": "datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_point_cloud.vtp",
+    "density_vti": "datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -3.1796720544074804,
+      -3.7804068757936284,
+      -5.072008956026141
+    ],
+    "max_bounds": [
+      5.169429794777036,
+      4.802324708220555,
+      4.175438740450383
+    ],
+    "spacing": [
+      0.26090943278701617,
+      0.26821036200044324,
+      0.28898274051489137
+    ],
+    "max_density": 607.0
+  },
+  "paraview_notes": [
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
+  ]
+}

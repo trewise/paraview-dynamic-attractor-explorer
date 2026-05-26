@@ -1,0 +1,166 @@
+name: lorenz_rho
+created_utc: '2026-05-26T05:35:32.306073+00:00'
+system_name: lorenz
+parameter_name: rho
+values:
+- 20.0
+- 24.0
+- 28.0
+- 32.0
+- 36.0
+- 40.0
+dataset_count: 6
+t_final: 35.0
+dt: 0.01
+density_resolution: 32
+datasets:
+- dataset_name: lorenz_rho_20p0
+  system_name: lorenz
+  parameter_name: rho
+  parameter_value: 20.0
+  files:
+    csv: datasets/sweeps/lorenz_rho/lorenz_rho_20p0/lorenz_rho_20p0_trajectory.csv
+    trajectory_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_20p0/lorenz_rho_20p0_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_20p0/lorenz_rho_20p0_point_cloud.vtp
+    density_vti: datasets/sweeps/lorenz_rho/lorenz_rho_20p0/lorenz_rho_20p0_density.vti
+    metadata: datasets/sweeps/lorenz_rho/lorenz_rho_20p0/lorenz_rho_20p0_metadata.json
+  bounds:
+    x:
+    - -10.709324674901172
+    - 15.086867782931373
+    y:
+    - -12.219304453521636
+    - 19.240416880815385
+    z:
+    - 0.9494787937773874
+    - 32.64470297548262
+  time:
+    start: 0.0
+    end: 35.0
+    steps: 3501
+    dt: 0.01
+- dataset_name: lorenz_rho_24p0
+  system_name: lorenz
+  parameter_name: rho
+  parameter_value: 24.0
+  files:
+    csv: datasets/sweeps/lorenz_rho/lorenz_rho_24p0/lorenz_rho_24p0_trajectory.csv
+    trajectory_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_24p0/lorenz_rho_24p0_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_24p0/lorenz_rho_24p0_point_cloud.vtp
+    density_vti: datasets/sweeps/lorenz_rho/lorenz_rho_24p0/lorenz_rho_24p0_density.vti
+    metadata: datasets/sweeps/lorenz_rho/lorenz_rho_24p0/lorenz_rho_24p0_metadata.json
+  bounds:
+    x:
+    - -14.343122834527811
+    - 17.380115742931523
+    y:
+    - -17.805389974565987
+    - 23.18509271624591
+    z:
+    - 0.9564686021873897
+    - 40.17983358648406
+  time:
+    start: 0.0
+    end: 35.0
+    steps: 3501
+    dt: 0.01
+- dataset_name: lorenz_rho_28p0
+  system_name: lorenz
+  parameter_name: rho
+  parameter_value: 28.0
+  files:
+    csv: datasets/sweeps/lorenz_rho/lorenz_rho_28p0/lorenz_rho_28p0_trajectory.csv
+    trajectory_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_28p0/lorenz_rho_28p0_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_28p0/lorenz_rho_28p0_point_cloud.vtp
+    density_vti: datasets/sweeps/lorenz_rho/lorenz_rho_28p0/lorenz_rho_28p0_density.vti
+    metadata: datasets/sweeps/lorenz_rho/lorenz_rho_28p0/lorenz_rho_28p0_metadata.json
+  bounds:
+    x:
+    - -17.391331246510624
+    - 19.555040676585282
+    y:
+    - -23.0433155541767
+    - 27.18347313583823
+    z:
+    - 0.9617372249104278
+    - 47.8339540885982
+  time:
+    start: 0.0
+    end: 35.0
+    steps: 3501
+    dt: 0.01
+- dataset_name: lorenz_rho_32p0
+  system_name: lorenz
+  parameter_name: rho
+  parameter_value: 32.0
+  files:
+    csv: datasets/sweeps/lorenz_rho/lorenz_rho_32p0/lorenz_rho_32p0_trajectory.csv
+    trajectory_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_32p0/lorenz_rho_32p0_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_32p0/lorenz_rho_32p0_point_cloud.vtp
+    density_vti: datasets/sweeps/lorenz_rho/lorenz_rho_32p0/lorenz_rho_32p0_density.vti
+    metadata: datasets/sweeps/lorenz_rho/lorenz_rho_32p0/lorenz_rho_32p0_metadata.json
+  bounds:
+    x:
+    - -18.612279977545487
+    - 21.575361516854944
+    y:
+    - -25.15658738114211
+    - 31.140379119962706
+    z:
+    - 0.9660815765178878
+    - 55.37458724413187
+  time:
+    start: 0.0
+    end: 35.0
+    steps: 3501
+    dt: 0.01
+- dataset_name: lorenz_rho_36p0
+  system_name: lorenz
+  parameter_name: rho
+  parameter_value: 36.0
+  files:
+    csv: datasets/sweeps/lorenz_rho/lorenz_rho_36p0/lorenz_rho_36p0_trajectory.csv
+    trajectory_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_36p0/lorenz_rho_36p0_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_36p0/lorenz_rho_36p0_point_cloud.vtp
+    density_vti: datasets/sweeps/lorenz_rho/lorenz_rho_36p0/lorenz_rho_36p0_density.vti
+    metadata: datasets/sweeps/lorenz_rho/lorenz_rho_36p0/lorenz_rho_36p0_metadata.json
+  bounds:
+    x:
+    - -18.915555611113724
+    - 23.555005515595234
+    y:
+    - -25.597592599783795
+    - 35.02302586775119
+    z:
+    - 0.9695797816930865
+    - 63.031539959756934
+  time:
+    start: 0.0
+    end: 35.0
+    steps: 3501
+    dt: 0.01
+- dataset_name: lorenz_rho_40p0
+  system_name: lorenz
+  parameter_name: rho
+  parameter_value: 40.0
+  files:
+    csv: datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_trajectory.csv
+    trajectory_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_point_cloud.vtp
+    density_vti: datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_density.vti
+    metadata: datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_metadata.json
+  bounds:
+    x:
+    - -22.611089022679895
+    - 25.410383984142218
+    y:
+    - -32.88623084176794
+    - 39.028528846179825
+    z:
+    - 0.9718560891876042
+    - 70.71152250168302
+  time:
+    start: 0.0
+    end: 35.0
+    steps: 3501
+    dt: 0.01

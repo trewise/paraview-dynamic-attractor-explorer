@@ -1,0 +1,166 @@
+name: thomas_b
+created_utc: '2026-05-26T05:35:39.754919+00:00'
+system_name: thomas
+parameter_name: b
+values:
+- 0.15
+- 0.18
+- 0.208186
+- 0.23
+- 0.26
+- 0.3
+dataset_count: 6
+t_final: 70.0
+dt: 0.01
+density_resolution: 32
+datasets:
+- dataset_name: thomas_b_0p15
+  system_name: thomas
+  parameter_name: b
+  parameter_value: 0.15
+  files:
+    csv: datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_trajectory.csv
+    trajectory_vtp: datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_point_cloud.vtp
+    density_vti: datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_density.vti
+    metadata: datasets/sweeps/thomas_b/thomas_b_0p15/thomas_b_0p15_metadata.json
+  bounds:
+    x:
+    - -2.6038719268775137
+    - 4.593629667247069
+    y:
+    - -3.1884943527581675
+    - 4.210412185185094
+    z:
+    - -4.434253942476036
+    - 3.5376837269002785
+  time:
+    start: 0.0
+    end: 70.0
+    steps: 7001
+    dt: 0.01
+- dataset_name: thomas_b_0p18
+  system_name: thomas
+  parameter_name: b
+  parameter_value: 0.18
+  files:
+    csv: datasets/sweeps/thomas_b/thomas_b_0p18/thomas_b_0p18_trajectory.csv
+    trajectory_vtp: datasets/sweeps/thomas_b/thomas_b_0p18/thomas_b_0p18_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/thomas_b/thomas_b_0p18/thomas_b_0p18_point_cloud.vtp
+    density_vti: datasets/sweeps/thomas_b/thomas_b_0p18/thomas_b_0p18_density.vti
+    metadata: datasets/sweeps/thomas_b/thomas_b_0p18/thomas_b_0p18_metadata.json
+  bounds:
+    x:
+    - -3.0086361003280806
+    - 3.3100456250424384
+    y:
+    - -3.343583450966687
+    - 3.9632625095174623
+    z:
+    - -4.021837342063982
+    - 2.9898349194191836
+  time:
+    start: 0.0
+    end: 70.0
+    steps: 7001
+    dt: 0.01
+- dataset_name: thomas_b_0p208186
+  system_name: thomas
+  parameter_name: b
+  parameter_value: 0.208186
+  files:
+    csv: datasets/sweeps/thomas_b/thomas_b_0p208186/thomas_b_0p208186_trajectory.csv
+    trajectory_vtp: datasets/sweeps/thomas_b/thomas_b_0p208186/thomas_b_0p208186_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/thomas_b/thomas_b_0p208186/thomas_b_0p208186_point_cloud.vtp
+    density_vti: datasets/sweeps/thomas_b/thomas_b_0p208186/thomas_b_0p208186_density.vti
+    metadata: datasets/sweeps/thomas_b/thomas_b_0p208186/thomas_b_0p208186_metadata.json
+  bounds:
+    x:
+    - -0.8648603888289574
+    - 3.7709408376465126
+    y:
+    - -1.050518229182686
+    - 3.3235210033927434
+    z:
+    - -1.0303576072718903
+    - 3.7812896694125406
+  time:
+    start: 0.0
+    end: 70.0
+    steps: 7001
+    dt: 0.01
+- dataset_name: thomas_b_0p23
+  system_name: thomas
+  parameter_name: b
+  parameter_value: 0.23
+  files:
+    csv: datasets/sweeps/thomas_b/thomas_b_0p23/thomas_b_0p23_trajectory.csv
+    trajectory_vtp: datasets/sweeps/thomas_b/thomas_b_0p23/thomas_b_0p23_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/thomas_b/thomas_b_0p23/thomas_b_0p23_point_cloud.vtp
+    density_vti: datasets/sweeps/thomas_b/thomas_b_0p23/thomas_b_0p23_density.vti
+    metadata: datasets/sweeps/thomas_b/thomas_b_0p23/thomas_b_0p23_metadata.json
+  bounds:
+    x:
+    - 0.09000097155311411
+    - 3.3765466086835323
+    y:
+    - 0.0
+    - 3.3783017539860665
+    z:
+    - 0.0
+    - 3.4317980031805098
+  time:
+    start: 0.0
+    end: 70.0
+    steps: 7001
+    dt: 0.01
+- dataset_name: thomas_b_0p26
+  system_name: thomas
+  parameter_name: b
+  parameter_value: 0.26
+  files:
+    csv: datasets/sweeps/thomas_b/thomas_b_0p26/thomas_b_0p26_trajectory.csv
+    trajectory_vtp: datasets/sweeps/thomas_b/thomas_b_0p26/thomas_b_0p26_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/thomas_b/thomas_b_0p26/thomas_b_0p26_point_cloud.vtp
+    density_vti: datasets/sweeps/thomas_b/thomas_b_0p26/thomas_b_0p26_density.vti
+    metadata: datasets/sweeps/thomas_b/thomas_b_0p26/thomas_b_0p26_metadata.json
+  bounds:
+    x:
+    - 0.08807820938979832
+    - 3.0983373341638654
+    y:
+    - 0.0
+    - 3.2034606442203852
+    z:
+    - 0.0
+    - 3.221391424839384
+  time:
+    start: 0.0
+    end: 70.0
+    steps: 7001
+    dt: 0.01
+- dataset_name: thomas_b_0p3
+  system_name: thomas
+  parameter_name: b
+  parameter_value: 0.3
+  files:
+    csv: datasets/sweeps/thomas_b/thomas_b_0p3/thomas_b_0p3_trajectory.csv
+    trajectory_vtp: datasets/sweeps/thomas_b/thomas_b_0p3/thomas_b_0p3_trajectory.vtp
+    point_cloud_vtp: datasets/sweeps/thomas_b/thomas_b_0p3/thomas_b_0p3_point_cloud.vtp
+    density_vti: datasets/sweeps/thomas_b/thomas_b_0p3/thomas_b_0p3_density.vti
+    metadata: datasets/sweeps/thomas_b/thomas_b_0p3/thomas_b_0p3_metadata.json
+  bounds:
+    x:
+    - 0.08539197473945502
+    - 2.3714269166240176
+    y:
+    - 0.0
+    - 2.37442968872661
+    z:
+    - 0.0
+    - 2.368923626128658
+  time:
+    start: 0.0
+    end: 70.0
+    steps: 7001
+    dt: 0.01

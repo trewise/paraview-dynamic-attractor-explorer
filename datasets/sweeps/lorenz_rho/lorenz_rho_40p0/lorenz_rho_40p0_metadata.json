@@ -1,0 +1,66 @@
+{
+  "name": "lorenz_rho_40p0",
+  "created_utc": "2026-05-26T05:35:32.305596+00:00",
+  "parameters": {
+    "sigma": 10.0,
+    "rho": 40.0,
+    "beta": 2.6666666666666665
+  },
+  "initial_state": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 35.0,
+    "steps": 3501,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -22.611089022679895,
+      25.410383984142218
+    ],
+    "y": [
+      -32.88623084176794,
+      39.028528846179825
+    ],
+    "z": [
+      0.9718560891876042,
+      70.71152250168302
+    ]
+  },
+  "files": {
+    "csv": "datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_trajectory.csv",
+    "trajectory_vtp": "datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_trajectory.vtp",
+    "point_cloud_vtp": "datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_point_cloud.vtp",
+    "density_vti": "datasets/sweeps/lorenz_rho/lorenz_rho_40p0/lorenz_rho_40p0_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -26.452806863225664,
+      -38.63941161680376,
+      -4.607317223812029
+    ],
+    "max_bounds": [
+      29.252101824687987,
+      44.78170962121565,
+      76.29069581468265
+    ],
+    "spacing": [
+      1.7407783964973016,
+      2.6069100386881066,
+      2.528062907452959
+    ],
+    "max_density": 27.0
+  },
+  "paraview_notes": [
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
+  ]
+}
