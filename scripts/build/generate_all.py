@@ -1,6 +1,13 @@
-"""Generate all baseline attractor datasets."""
-
 from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2] if "scripts" in Path(__file__).parts else Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+"""Generate all baseline attractor datasets."""
 
 from src.attractors import list_systems
 from src.generators import generate_attractor_dataset

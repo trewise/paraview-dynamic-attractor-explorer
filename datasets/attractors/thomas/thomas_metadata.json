@@ -1,0 +1,43 @@
+{
+  "name": "thomas",
+  "created_utc": "2026-05-26T05:10:33.470900+00:00",
+  "parameters": {
+    "b": 0.208186
+  },
+  "initial_state": [
+    0.1,
+    0.0,
+    0.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 100.0,
+    "steps": 10001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -1.0105859173255203,
+      3.7709408376465126
+    ],
+    "y": [
+      -1.050518229182686,
+      3.761789617200446
+    ],
+    "z": [
+      -1.0303576072718903,
+      3.7812896694125406
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/thomas/thomas_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/thomas/thomas_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/thomas/thomas_point_cloud.vtp"
+  },
+  "paraview_notes": [
+    "Open the VTP trajectory file in ParaView.",
+    "Apply Tube filter to make the curve visible.",
+    "Color by time or point index.",
+    "Use the point-cloud VTP for glyph-based views."
+  ]
+}

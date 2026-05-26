@@ -1,0 +1,45 @@
+{
+  "name": "lorenz",
+  "created_utc": "2026-05-26T05:10:31.740535+00:00",
+  "parameters": {
+    "sigma": 10.0,
+    "rho": 28.0,
+    "beta": 2.6666666666666665
+  },
+  "initial_state": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 40.0,
+    "steps": 4001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -17.391331246510624,
+      19.555040676585282
+    ],
+    "y": [
+      -23.0433155541767,
+      27.18347313583823
+    ],
+    "z": [
+      0.9617372249104278,
+      47.8339540885982
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/lorenz/lorenz_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/lorenz/lorenz_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/lorenz/lorenz_point_cloud.vtp"
+  },
+  "paraview_notes": [
+    "Open the VTP trajectory file in ParaView.",
+    "Apply Tube filter to make the curve visible.",
+    "Color by time or point index.",
+    "Use the point-cloud VTP for glyph-based views."
+  ]
+}

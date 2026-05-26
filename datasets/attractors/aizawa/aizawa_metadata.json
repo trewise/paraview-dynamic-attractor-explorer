@@ -1,0 +1,48 @@
+{
+  "name": "aizawa",
+  "created_utc": "2026-05-26T05:10:31.056069+00:00",
+  "parameters": {
+    "a": 0.95,
+    "b": 0.7,
+    "c": 0.6,
+    "d": 3.5,
+    "e": 0.25,
+    "f": 0.1
+  },
+  "initial_state": [
+    0.1,
+    0.0,
+    0.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 80.0,
+    "steps": 8001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -1.5074703885425957,
+      1.4718656912499282
+    ],
+    "y": [
+      -1.4530666511490837,
+      1.484406373974394
+    ],
+    "z": [
+      -0.3599722128701003,
+      1.8851468919258811
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/aizawa/aizawa_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/aizawa/aizawa_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/aizawa/aizawa_point_cloud.vtp"
+  },
+  "paraview_notes": [
+    "Open the VTP trajectory file in ParaView.",
+    "Apply Tube filter to make the curve visible.",
+    "Color by time or point index.",
+    "Use the point-cloud VTP for glyph-based views."
+  ]
+}

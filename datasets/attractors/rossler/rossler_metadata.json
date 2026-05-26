@@ -1,0 +1,45 @@
+{
+  "name": "rossler",
+  "created_utc": "2026-05-26T05:10:32.405952+00:00",
+  "parameters": {
+    "a": 0.2,
+    "b": 0.2,
+    "c": 5.7
+  },
+  "initial_state": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 80.0,
+    "steps": 8001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -8.98368201521769,
+      11.31648197935982
+    ],
+    "y": [
+      -10.646530398963833,
+      7.7346124378832055
+    ],
+    "z": [
+      0.0,
+      21.718141187757123
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/rossler/rossler_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/rossler/rossler_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/rossler/rossler_point_cloud.vtp"
+  },
+  "paraview_notes": [
+    "Open the VTP trajectory file in ParaView.",
+    "Apply Tube filter to make the curve visible.",
+    "Color by time or point index.",
+    "Use the point-cloud VTP for glyph-based views."
+  ]
+}

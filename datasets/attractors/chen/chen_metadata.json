@@ -1,0 +1,45 @@
+{
+  "name": "chen",
+  "created_utc": "2026-05-26T05:10:31.399345+00:00",
+  "parameters": {
+    "a": 35.0,
+    "b": 3.0,
+    "c": 28.0
+  },
+  "initial_state": [
+    -10.0,
+    0.0,
+    37.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 40.0,
+    "steps": 4001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -23.577312225043393,
+      22.89852798641708
+    ],
+    "y": [
+      -26.880983028397747,
+      25.999390273569723
+    ],
+    "z": [
+      8.014221075989303,
+      44.69923939272387
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/chen/chen_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/chen/chen_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/chen/chen_point_cloud.vtp"
+  },
+  "paraview_notes": [
+    "Open the VTP trajectory file in ParaView.",
+    "Apply Tube filter to make the curve visible.",
+    "Color by time or point index.",
+    "Use the point-cloud VTP for glyph-based views."
+  ]
+}
