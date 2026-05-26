@@ -1,0 +1,68 @@
+{
+  "name": "dadras",
+  "created_utc": "2026-05-26T05:17:27.411251+00:00",
+  "parameters": {
+    "a": 3.0,
+    "b": 2.7,
+    "c": 1.7,
+    "d": 2.0,
+    "e": 9.0
+  },
+  "initial_state": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 40.0,
+    "steps": 4001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -10.691937706570458,
+      11.485572067652992
+    ],
+    "y": [
+      -6.983742820443009,
+      5.677372566702141
+    ],
+    "z": [
+      -7.681077426058105,
+      6.720150996833894
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/dadras/dadras_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/dadras/dadras_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/dadras/dadras_point_cloud.vtp",
+    "density_vti": "datasets/attractors/dadras/dadras_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -12.466138488508335,
+      -7.996632051414621,
+      -8.833175699889466
+    ],
+    "max_bounds": [
+      13.259772849590869,
+      6.690261797673753,
+      7.872249270665254
+    ],
+    "spacing": [
+      0.8039347293156001,
+      0.4589654327840117,
+      0.522044530329835
+    ],
+    "max_density": 74.0
+  },
+  "paraview_notes": [
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
+  ]
+}

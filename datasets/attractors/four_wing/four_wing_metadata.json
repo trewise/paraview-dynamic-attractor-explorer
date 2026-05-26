@@ -1,0 +1,66 @@
+{
+  "name": "four_wing",
+  "created_utc": "2026-05-26T05:17:28.407224+00:00",
+  "parameters": {
+    "a": 0.2,
+    "b": 0.01,
+    "c": -0.4
+  },
+  "initial_state": [
+    0.1,
+    0.0,
+    0.0
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 120.0,
+    "steps": 12001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -2.0237380370793643,
+      1.9641337248276702
+    ],
+    "y": [
+      -1.9323715502781686,
+      1.8700995984725008
+    ],
+    "z": [
+      -1.5326181986251532,
+      0.6354759335614207
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/four_wing/four_wing_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/four_wing/four_wing_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/four_wing/four_wing_point_cloud.vtp",
+    "density_vti": "datasets/attractors/four_wing/four_wing_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -2.342767778031927,
+      -2.236569242178222,
+      -1.7060657292000792
+    ],
+    "max_bounds": [
+      2.283163465780233,
+      2.1742972903725546,
+      0.8089234641363466
+    ],
+    "spacing": [
+      0.14456035136913,
+      0.1378395791422118,
+      0.07859341229176331
+    ],
+    "max_density": 949.0
+  },
+  "paraview_notes": [
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
+  ]
+}

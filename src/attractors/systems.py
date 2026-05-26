@@ -26,14 +26,11 @@ class AttractorSystem:
 
 def lorenz(_: float, state: State, p: dict[str, float]) -> State:
     x, y, z = state
-    sigma = p["sigma"]
-    rho = p["rho"]
-    beta = p["beta"]
     return np.array(
         [
-            sigma * (y - x),
-            x * (rho - z) - y,
-            x * y - beta * z,
+            p["sigma"] * (y - x),
+            x * (p["rho"] - z) - y,
+            x * y - p["beta"] * z,
         ],
         dtype=float,
     )
@@ -41,14 +38,11 @@ def lorenz(_: float, state: State, p: dict[str, float]) -> State:
 
 def rossler(_: float, state: State, p: dict[str, float]) -> State:
     x, y, z = state
-    a = p["a"]
-    b = p["b"]
-    c = p["c"]
     return np.array(
         [
             -y - z,
-            x + a * y,
-            b + z * (x - c),
+            x + p["a"] * y,
+            p["b"] + z * (x - p["c"]),
         ],
         dtype=float,
     )
@@ -56,14 +50,11 @@ def rossler(_: float, state: State, p: dict[str, float]) -> State:
 
 def chen(_: float, state: State, p: dict[str, float]) -> State:
     x, y, z = state
-    a = p["a"]
-    b = p["b"]
-    c = p["c"]
     return np.array(
         [
-            a * (y - x),
-            (c - a) * x - x * z + c * y,
-            x * y - b * z,
+            p["a"] * (y - x),
+            (p["c"] - p["a"]) * x - x * z + p["c"] * y,
+            x * y - p["b"] * z,
         ],
         dtype=float,
     )
@@ -71,18 +62,15 @@ def chen(_: float, state: State, p: dict[str, float]) -> State:
 
 def aizawa(_: float, state: State, p: dict[str, float]) -> State:
     x, y, z = state
-    a = p["a"]
-    b = p["b"]
-    c = p["c"]
-    d = p["d"]
-    e = p["e"]
-    f = p["f"]
     return np.array(
         [
-            (z - b) * x - d * y,
-            d * x + (z - b) * y,
-            c + a * z - (z**3) / 3.0 - (x**2 + y**2) * (1.0 + e * z)
-            + f * z * x**3,
+            (z - p["b"]) * x - p["d"] * y,
+            p["d"] * x + (z - p["b"]) * y,
+            p["c"]
+            + p["a"] * z
+            - (z**3) / 3.0
+            - (x**2 + y**2) * (1.0 + p["e"] * z)
+            + p["f"] * z * x**3,
         ],
         dtype=float,
     )
@@ -90,15 +78,66 @@ def aizawa(_: float, state: State, p: dict[str, float]) -> State:
 
 def thomas(_: float, state: State, p: dict[str, float]) -> State:
     x, y, z = state
-    b = p["b"]
     return np.array(
         [
-            np.sin(y) - b * x,
-            np.sin(z) - b * y,
-            np.sin(x) - b * z,
+            np.sin(y) - p["b"] * x,
+            np.sin(z) - p["b"] * y,
+            np.sin(x) - p["b"] * z,
         ],
         dtype=float,
     )
+
+
+def halvorsen(_: float, state: State, p: dict[str, float]) -> State:
+    x, y, z = state
+    a = p["a"]
+    return np.array(
+        [
+            -a * x - 4.0 * y - 4.0 * z - y**2,
+            -a * y - 4.0 * z - 4.0 * x - z**2,
+            -a * z - 4.0 * x - 4.0 * y - x**2,
+        ],
+        dtype=float,
+    )
+
+
+def dadras(_: float, state: State, p: dict[str, float]) -> State:
+    x, y, z = state
+    return np.array(
+        [
+            y - p["a"] * x + p["b"] * y * z,
+            p["c"] * y - x * z + z,
+            p["d"] * x * y - p["e"] * z,
+        ],
+        dtype=float,
+    )
+
+
+def four_wing(_: float, state: State, p: dict[str, float]) -> State:
+    x, y, z = state
+    return np.array(
+        [
+            p["a"] * x + y * z,
+            p["b"] * x + p["c"] * y - x * z,
+            -z - x * y,
+        ],
+        dtype=float,
+    )
+
+
+def sprott_a(_: float, state: State, p: dict[str, float]) -> State:
+    x, y, z = state
+    return np.array([y, -x + y * z, p["a"] - y**2], dtype=float)
+
+
+def sprott_b(_: float, state: State, p: dict[str, float]) -> State:
+    x, y, z = state
+    return np.array([y * z, x - y, p["a"] - x * y], dtype=float)
+
+
+def sprott_c(_: float, state: State, p: dict[str, float]) -> State:
+    x, y, z = state
+    return np.array([y * z, x - y, p["a"] - x**2], dtype=float)
 
 
 SYSTEMS: dict[str, AttractorSystem] = {
@@ -135,6 +174,48 @@ SYSTEMS: dict[str, AttractorSystem] = {
         initial_state=(0.1, 0.0, 0.0),
         default_t_final=100.0,
     ),
+    "halvorsen": AttractorSystem(
+        name="halvorsen",
+        derivative=halvorsen,
+        parameters={"a": 1.4},
+        initial_state=(-1.48, -1.51, 2.04),
+        default_t_final=60.0,
+    ),
+    "dadras": AttractorSystem(
+        name="dadras",
+        derivative=dadras,
+        parameters={"a": 3.0, "b": 2.7, "c": 1.7, "d": 2.0, "e": 9.0},
+        initial_state=(1.0, 1.0, 1.0),
+        default_t_final=40.0,
+    ),
+    "four_wing": AttractorSystem(
+        name="four_wing",
+        derivative=four_wing,
+        parameters={"a": 0.2, "b": 0.01, "c": -0.4},
+        initial_state=(0.1, 0.0, 0.0),
+        default_t_final=120.0,
+    ),
+    "sprott_a": AttractorSystem(
+        name="sprott_a",
+        derivative=sprott_a,
+        parameters={"a": 1.0},
+        initial_state=(0.1, 0.0, 0.0),
+        default_t_final=80.0,
+    ),
+    "sprott_b": AttractorSystem(
+        name="sprott_b",
+        derivative=sprott_b,
+        parameters={"a": 1.0},
+        initial_state=(0.1, 0.1, 0.1),
+        default_t_final=80.0,
+    ),
+    "sprott_c": AttractorSystem(
+        name="sprott_c",
+        derivative=sprott_c,
+        parameters={"a": 1.0},
+        initial_state=(0.1, 0.1, 0.1),
+        default_t_final=80.0,
+    ),
 }
 
 
@@ -145,7 +226,7 @@ def list_systems() -> list[str]:
 
 def get_system(name: str) -> AttractorSystem:
     """Fetch an attractor system by name."""
-    key = name.lower().strip()
+    key = name.lower().strip().replace("-", "_")
     if key not in SYSTEMS:
         options = ", ".join(list_systems())
         raise KeyError(f"Unknown attractor system '{name}'. Available systems: {options}")

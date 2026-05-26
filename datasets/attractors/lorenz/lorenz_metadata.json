@@ -1,6 +1,6 @@
 {
   "name": "lorenz",
-  "created_utc": "2026-05-26T05:10:31.740535+00:00",
+  "created_utc": "2026-05-26T05:17:29.273427+00:00",
   "parameters": {
     "sigma": 10.0,
     "rho": 28.0,
@@ -34,12 +34,33 @@
   "files": {
     "csv": "datasets/attractors/lorenz/lorenz_trajectory.csv",
     "trajectory_vtp": "datasets/attractors/lorenz/lorenz_trajectory.vtp",
-    "point_cloud_vtp": "datasets/attractors/lorenz/lorenz_point_cloud.vtp"
+    "point_cloud_vtp": "datasets/attractors/lorenz/lorenz_point_cloud.vtp",
+    "density_vti": "datasets/attractors/lorenz/lorenz_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -20.347041000358296,
+      -27.061458649377897,
+      -2.788040124184594
+    ],
+    "max_bounds": [
+      22.510750430432957,
+      31.201616231039424,
+      51.58373143769322
+    ],
+    "spacing": [
+      1.3393059822122266,
+      1.8207210900130413,
+      1.6991178613086815
+    ],
+    "max_density": 45.0
   },
   "paraview_notes": [
-    "Open the VTP trajectory file in ParaView.",
-    "Apply Tube filter to make the curve visible.",
-    "Color by time or point index.",
-    "Use the point-cloud VTP for glyph-based views."
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
   ]
 }

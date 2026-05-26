@@ -1,6 +1,6 @@
 {
   "name": "aizawa",
-  "created_utc": "2026-05-26T05:10:31.056069+00:00",
+  "created_utc": "2026-05-26T05:17:26.706952+00:00",
   "parameters": {
     "a": 0.95,
     "b": 0.7,
@@ -37,12 +37,33 @@
   "files": {
     "csv": "datasets/attractors/aizawa/aizawa_trajectory.csv",
     "trajectory_vtp": "datasets/attractors/aizawa/aizawa_trajectory.vtp",
-    "point_cloud_vtp": "datasets/attractors/aizawa/aizawa_point_cloud.vtp"
+    "point_cloud_vtp": "datasets/attractors/aizawa/aizawa_point_cloud.vtp",
+    "density_vti": "datasets/attractors/aizawa/aizawa_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -1.7458172749259977,
+      -1.688064493158962,
+      -0.5395817412537788
+    ],
+    "max_bounds": [
+      1.7102125776333301,
+      1.7194042159842722,
+      2.0647564203095596
+    ],
+    "spacing": [
+      0.108000932892479,
+      0.10648339716072606,
+      0.08138556754885433
+    ],
+    "max_density": 30.0
   },
   "paraview_notes": [
-    "Open the VTP trajectory file in ParaView.",
-    "Apply Tube filter to make the curve visible.",
-    "Color by time or point index.",
-    "Use the point-cloud VTP for glyph-based views."
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
   ]
 }

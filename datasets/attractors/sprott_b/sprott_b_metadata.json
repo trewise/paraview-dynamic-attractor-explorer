@@ -1,0 +1,64 @@
+{
+  "name": "sprott_b",
+  "created_utc": "2026-05-26T05:17:31.224144+00:00",
+  "parameters": {
+    "a": 1.0
+  },
+  "initial_state": [
+    0.1,
+    0.1,
+    0.1
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 80.0,
+    "steps": 8001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -3.706918388334322,
+      4.733103893950099
+    ],
+    "y": [
+      -2.455643251012003,
+      2.897496941657484
+    ],
+    "z": [
+      -4.376602524314811,
+      3.816038871968219
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/sprott_b/sprott_b_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/sprott_b/sprott_b_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/sprott_b/sprott_b_point_cloud.vtp",
+    "density_vti": "datasets/attractors/sprott_b/sprott_b_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -4.382120170917076,
+      -2.883894466425562,
+      -5.032013836017454
+    ],
+    "max_bounds": [
+      5.408305676532852,
+      3.3257481570710428,
+      4.471450183670861
+    ],
+    "spacing": [
+      0.30595080773281025,
+      0.19405133198426888,
+      0.2969832506152598
+    ],
+    "max_density": 173.0
+  },
+  "paraview_notes": [
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
+  ]
+}

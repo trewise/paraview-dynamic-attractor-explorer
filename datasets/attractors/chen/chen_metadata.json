@@ -1,6 +1,6 @@
 {
   "name": "chen",
-  "created_utc": "2026-05-26T05:10:31.399345+00:00",
+  "created_utc": "2026-05-26T05:17:27.047133+00:00",
   "parameters": {
     "a": 35.0,
     "b": 3.0,
@@ -34,12 +34,33 @@
   "files": {
     "csv": "datasets/attractors/chen/chen_trajectory.csv",
     "trajectory_vtp": "datasets/attractors/chen/chen_trajectory.vtp",
-    "point_cloud_vtp": "datasets/attractors/chen/chen_point_cloud.vtp"
+    "point_cloud_vtp": "datasets/attractors/chen/chen_point_cloud.vtp",
+    "density_vti": "datasets/attractors/chen/chen_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -27.29537944196023,
+      -31.111412892555144,
+      5.079419610650538
+    ],
+    "max_bounds": [
+      26.616595203333915,
+      30.22982013772712,
+      47.63404085806263
+    ],
+    "spacing": [
+      1.684749207665442,
+      1.9169135321963209,
+      1.329831913981628
+    ],
+    "max_density": 33.0
   },
   "paraview_notes": [
-    "Open the VTP trajectory file in ParaView.",
-    "Apply Tube filter to make the curve visible.",
-    "Color by time or point index.",
-    "Use the point-cloud VTP for glyph-based views."
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
   ]
 }

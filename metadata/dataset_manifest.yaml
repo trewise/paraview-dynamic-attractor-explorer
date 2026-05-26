@@ -1,0 +1,489 @@
+title: Dynamic Attractor Observatory Dataset Manifest
+dataset_root: datasets/attractors
+dataset_count: 11
+formats:
+- csv
+- vtp
+- vti
+- json
+paraview_ready: true
+datasets:
+- name: aizawa
+  parameters:
+    a: 0.95
+    b: 0.7
+    c: 0.6
+    d: 3.5
+    e: 0.25
+    f: 0.1
+  initial_state:
+  - 0.1
+  - 0.0
+  - 0.0
+  time:
+    start: 0.0
+    end: 80.0
+    steps: 8001
+    dt: 0.01
+  bounds:
+    x:
+    - -1.5074703885425957
+    - 1.4718656912499282
+    y:
+    - -1.4530666511490837
+    - 1.484406373974394
+    z:
+    - -0.3599722128701003
+    - 1.8851468919258811
+  files:
+    csv: datasets/attractors/aizawa/aizawa_trajectory.csv
+    trajectory_vtp: datasets/attractors/aizawa/aizawa_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/aizawa/aizawa_point_cloud.vtp
+    density_vti: datasets/attractors/aizawa/aizawa_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -1.7458172749259977
+    - -1.688064493158962
+    - -0.5395817412537788
+    max_bounds:
+    - 1.7102125776333301
+    - 1.7194042159842722
+    - 2.0647564203095596
+    spacing:
+    - 0.0540004664462395
+    - 0.05324169858036303
+    - 0.040692783774427164
+    max_density: 10.0
+- name: chen
+  parameters:
+    a: 35.0
+    b: 3.0
+    c: 28.0
+  initial_state:
+  - -10.0
+  - 0.0
+  - 37.0
+  time:
+    start: 0.0
+    end: 40.0
+    steps: 4001
+    dt: 0.01
+  bounds:
+    x:
+    - -23.577312225043393
+    - 22.89852798641708
+    y:
+    - -26.880983028397747
+    - 25.999390273569723
+    z:
+    - 8.014221075989303
+    - 44.69923939272387
+  files:
+    csv: datasets/attractors/chen/chen_trajectory.csv
+    trajectory_vtp: datasets/attractors/chen/chen_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/chen/chen_point_cloud.vtp
+    density_vti: datasets/attractors/chen/chen_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -27.29537944196023
+    - -31.111412892555144
+    - 5.079419610650538
+    max_bounds:
+    - 26.616595203333915
+    - 30.22982013772712
+    - 47.63404085806263
+    spacing:
+    - 0.842374603832721
+    - 0.9584567660981604
+    - 0.664915956990814
+    max_density: 11.0
+- name: dadras
+  parameters:
+    a: 3.0
+    b: 2.7
+    c: 1.7
+    d: 2.0
+    e: 9.0
+  initial_state:
+  - 1.0
+  - 1.0
+  - 1.0
+  time:
+    start: 0.0
+    end: 40.0
+    steps: 4001
+    dt: 0.01
+  bounds:
+    x:
+    - -10.691937706570458
+    - 11.485572067652992
+    y:
+    - -6.983742820443009
+    - 5.677372566702141
+    z:
+    - -7.681077426058105
+    - 6.720150996833894
+  files:
+    csv: datasets/attractors/dadras/dadras_trajectory.csv
+    trajectory_vtp: datasets/attractors/dadras/dadras_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/dadras/dadras_point_cloud.vtp
+    density_vti: datasets/attractors/dadras/dadras_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -12.466138488508335
+    - -7.996632051414621
+    - -8.833175699889466
+    max_bounds:
+    - 13.259772849590869
+    - 6.690261797673753
+    - 7.872249270665254
+    spacing:
+    - 0.40196736465780003
+    - 0.22948271639200585
+    - 0.2610222651649175
+    max_density: 28.0
+- name: four_wing
+  parameters:
+    a: 0.2
+    b: 0.01
+    c: -0.4
+  initial_state:
+  - 0.1
+  - 0.0
+  - 0.0
+  time:
+    start: 0.0
+    end: 120.0
+    steps: 12001
+    dt: 0.01
+  bounds:
+    x:
+    - -2.0237380370793643
+    - 1.9641337248276702
+    y:
+    - -1.9323715502781686
+    - 1.8700995984725008
+    z:
+    - -1.5326181986251532
+    - 0.6354759335614207
+  files:
+    csv: datasets/attractors/four_wing/four_wing_trajectory.csv
+    trajectory_vtp: datasets/attractors/four_wing/four_wing_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/four_wing/four_wing_point_cloud.vtp
+    density_vti: datasets/attractors/four_wing/four_wing_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -2.342767778031927
+    - -2.236569242178222
+    - -1.7060657292000792
+    max_bounds:
+    - 2.283163465780233
+    - 2.1742972903725546
+    - 0.8089234641363466
+    spacing:
+    - 0.072280175684565
+    - 0.0689197895711059
+    - 0.039296706145881655
+    max_density: 457.0
+- name: halvorsen
+  parameters:
+    a: 1.4
+  initial_state:
+  - -1.48
+  - -1.51
+  - 2.04
+  time:
+    start: 0.0
+    end: 60.0
+    steps: 6001
+    dt: 0.01
+  bounds:
+    x:
+    - -13.254204659554132
+    - 6.356790168168567
+    y:
+    - -13.30382634846018
+    - 6.34417837509239
+    z:
+    - -13.268218665902648
+    - 6.325486173452844
+  files:
+    csv: datasets/attractors/halvorsen/halvorsen_trajectory.csv
+    trajectory_vtp: datasets/attractors/halvorsen/halvorsen_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/halvorsen/halvorsen_point_cloud.vtp
+    density_vti: datasets/attractors/halvorsen/halvorsen_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -14.823084245771948
+    - -14.875666726344386
+    - -14.835715053051088
+    max_bounds:
+    - 7.925669754386384
+    - 7.916018752976596
+    - 7.892982560601284
+    spacing:
+    - 0.35544928125247394
+    - 0.35612008561439035
+    - 0.3551359002133183
+    max_density: 14.0
+- name: lorenz
+  parameters:
+    sigma: 10.0
+    rho: 28.0
+    beta: 2.6666666666666665
+  initial_state:
+  - 1.0
+  - 1.0
+  - 1.0
+  time:
+    start: 0.0
+    end: 40.0
+    steps: 4001
+    dt: 0.01
+  bounds:
+    x:
+    - -17.391331246510624
+    - 19.555040676585282
+    y:
+    - -23.0433155541767
+    - 27.18347313583823
+    z:
+    - 0.9617372249104278
+    - 47.8339540885982
+  files:
+    csv: datasets/attractors/lorenz/lorenz_trajectory.csv
+    trajectory_vtp: datasets/attractors/lorenz/lorenz_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/lorenz/lorenz_point_cloud.vtp
+    density_vti: datasets/attractors/lorenz/lorenz_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -20.347041000358296
+    - -27.061458649377897
+    - -2.788040124184594
+    max_bounds:
+    - 22.510750430432957
+    - 31.201616231039424
+    - 51.58373143769322
+    spacing:
+    - 0.6696529911061133
+    - 0.9103605450065206
+    - 0.8495589306543407
+    max_density: 17.0
+- name: rossler
+  parameters:
+    a: 0.2
+    b: 0.2
+    c: 5.7
+  initial_state:
+  - 1.0
+  - 0.0
+  - 0.0
+  time:
+    start: 0.0
+    end: 80.0
+    steps: 8001
+    dt: 0.01
+  bounds:
+    x:
+    - -8.98368201521769
+    - 11.31648197935982
+    y:
+    - -10.646530398963833
+    - 7.7346124378832055
+    z:
+    - 0.0
+    - 21.718141187757123
+  files:
+    csv: datasets/attractors/rossler/rossler_trajectory.csv
+    trajectory_vtp: datasets/attractors/rossler/rossler_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/rossler/rossler_point_cloud.vtp
+    density_vti: datasets/attractors/rossler/rossler_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -10.60769513478389
+    - -12.117021825911596
+    - -1.7374512950205698
+    max_bounds:
+    - 12.94049509892602
+    - 9.205103864830969
+    - 23.455592482777693
+    spacing:
+    - 0.36794047240171734
+    - 0.3331582139178526
+    - 0.39364130902809785
+    max_density: 34.0
+- name: sprott_a
+  parameters:
+    a: 1.0
+  initial_state:
+  - 0.1
+  - 0.0
+  - 0.0
+  time:
+    start: 0.0
+    end: 80.0
+    steps: 8001
+    dt: 0.01
+  bounds:
+    x:
+    - -2.8836490580191465
+    - 0.15061682292127906
+    y:
+    - -2.2345832156367647
+    - 2.231995015576585
+    z:
+    - -2.174593123283325
+    - 2.169940392983642
+  files:
+    csv: datasets/attractors/sprott_a/sprott_a_trajectory.csv
+    trajectory_vtp: datasets/attractors/sprott_a/sprott_a_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/sprott_a/sprott_a_point_cloud.vtp
+    density_vti: datasets/attractors/sprott_a/sprott_a_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -3.1263903284943804
+    - -2.5919094741338324
+    - -2.5221558045846826
+    max_bounds:
+    - 0.3933580933965131
+    - 2.5893212740736526
+    - 2.5175030742849995
+    spacing:
+    - 0.05499606909204521
+    - 0.08095673044074195
+    - 0.07874466998233878
+    max_density: 45.0
+- name: sprott_b
+  parameters:
+    a: 1.0
+  initial_state:
+  - 0.1
+  - 0.1
+  - 0.1
+  time:
+    start: 0.0
+    end: 80.0
+    steps: 8001
+    dt: 0.01
+  bounds:
+    x:
+    - -3.706918388334322
+    - 4.733103893950099
+    y:
+    - -2.455643251012003
+    - 2.897496941657484
+    z:
+    - -4.376602524314811
+    - 3.816038871968219
+  files:
+    csv: datasets/attractors/sprott_b/sprott_b_trajectory.csv
+    trajectory_vtp: datasets/attractors/sprott_b/sprott_b_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/sprott_b/sprott_b_point_cloud.vtp
+    density_vti: datasets/attractors/sprott_b/sprott_b_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -4.382120170917076
+    - -2.883894466425562
+    - -5.032013836017454
+    max_bounds:
+    - 5.408305676532852
+    - 3.3257481570710428
+    - 4.471450183670861
+    spacing:
+    - 0.15297540386640512
+    - 0.09702566599213444
+    - 0.1484916253076299
+    max_density: 81.0
+- name: sprott_c
+  parameters:
+    a: 1.0
+  initial_state:
+  - 0.1
+  - 0.1
+  - 0.1
+  time:
+    start: 0.0
+    end: 80.0
+    steps: 8001
+    dt: 0.01
+  bounds:
+    x:
+    - -2.217033430645448
+    - 2.374957924228626
+    y:
+    - -1.5930546207825018
+    - 1.6610479556039925
+    z:
+    - -1.8526333867524367
+    - 2.416608656133576
+  files:
+    csv: datasets/attractors/sprott_c/sprott_c_trajectory.csv
+    trajectory_vtp: datasets/attractors/sprott_c/sprott_c_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/sprott_c/sprott_c_point_cloud.vtp
+    density_vti: datasets/attractors/sprott_c/sprott_c_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -2.584392739035374
+    - -1.8533828268934214
+    - -2.1941727501833177
+    max_bounds:
+    - 2.742317232618552
+    - 1.921376161714912
+    - 2.758148019564457
+    spacing:
+    - 0.0832298433070926
+    - 0.05898060919700521
+    - 0.07738001202730899
+    max_density: 20.0
+- name: thomas
+  parameters:
+    b: 0.208186
+  initial_state:
+  - 0.1
+  - 0.0
+  - 0.0
+  time:
+    start: 0.0
+    end: 100.0
+    steps: 10001
+    dt: 0.01
+  bounds:
+    x:
+    - -1.0105859173255203
+    - 3.7709408376465126
+    y:
+    - -1.050518229182686
+    - 3.761789617200446
+    z:
+    - -1.0303576072718903
+    - 3.7812896694125406
+  files:
+    csv: datasets/attractors/thomas/thomas_trajectory.csv
+    trajectory_vtp: datasets/attractors/thomas/thomas_trajectory.vtp
+    point_cloud_vtp: datasets/attractors/thomas/thomas_point_cloud.vtp
+    density_vti: datasets/attractors/thomas/thomas_density.vti
+  density_volume:
+    resolution: 64
+    origin:
+    - -1.3931080577232828
+    - -1.4355028568933366
+    - -1.4152893894066447
+    max_bounds:
+    - 4.153462978044275
+    - 4.1467742449110965
+    - 4.166221451547295
+    spacing:
+    - 0.08666517243386809
+    - 0.08722307971569426
+    - 0.0872111068899053
+    max_density: 582.0

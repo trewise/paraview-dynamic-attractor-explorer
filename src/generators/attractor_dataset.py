@@ -7,6 +7,7 @@ from pathlib import Path
 from src.attractors import get_system
 from src.export import (
     write_csv,
+    write_density_vti,
     write_metadata,
     write_point_cloud_vtp,
     write_trajectory_vtp,
@@ -19,8 +20,10 @@ def generate_attractor_dataset(
     output_root: str | Path = "datasets/attractors",
     t_final: float | None = None,
     dt: float | None = None,
+    density_resolution: int = 64,
+    include_density: bool = True,
 ) -> dict[str, Path]:
-    """Generate CSV, VTP, and metadata files for one attractor."""
+    """Generate CSV, VTP, VTI, and metadata files for one attractor."""
     system = get_system(name)
     t_final = system.default_t_final if t_final is None else t_final
     dt = system.default_dt if dt is None else dt
@@ -41,6 +44,23 @@ def generate_attractor_dataset(
     point_cloud_vtp_path = write_point_cloud_vtp(
         root / f"{system.name}_point_cloud.vtp", times, states
     )
+
+    density_vti_path = None
+    density_metadata = None
+    outputs = {
+        "csv": csv_path,
+        "trajectory_vtp": trajectory_vtp_path,
+        "point_cloud_vtp": point_cloud_vtp_path,
+    }
+
+    if include_density:
+        density_vti_path, density_metadata = write_density_vti(
+            root / f"{system.name}_density.vti",
+            states,
+            resolution=density_resolution,
+        )
+        outputs["density_vti"] = density_vti_path
+
     metadata_path = write_metadata(
         root / f"{system.name}_metadata.json",
         system,
@@ -49,11 +69,9 @@ def generate_attractor_dataset(
         csv_path,
         trajectory_vtp_path,
         point_cloud_vtp_path,
+        density_vti_path=density_vti_path,
+        density_metadata=density_metadata,
     )
+    outputs["metadata"] = metadata_path
 
-    return {
-        "csv": csv_path,
-        "trajectory_vtp": trajectory_vtp_path,
-        "point_cloud_vtp": point_cloud_vtp_path,
-        "metadata": metadata_path,
-    }
+    return outputs

@@ -9,6 +9,10 @@ def test_system_registry_has_baseline_systems():
     assert "lorenz" in systems
     assert "rossler" in systems
     assert "chen" in systems
+    assert "halvorsen" in systems
+    assert "dadras" in systems
+    assert "four_wing" in systems
+    assert "sprott_a" in systems
 
 
 def test_lorenz_derivative_shape():

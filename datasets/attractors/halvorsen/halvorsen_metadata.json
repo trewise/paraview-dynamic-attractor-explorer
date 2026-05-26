@@ -1,0 +1,64 @@
+{
+  "name": "halvorsen",
+  "created_utc": "2026-05-26T05:17:28.939151+00:00",
+  "parameters": {
+    "a": 1.4
+  },
+  "initial_state": [
+    -1.48,
+    -1.51,
+    2.04
+  ],
+  "time": {
+    "start": 0.0,
+    "end": 60.0,
+    "steps": 6001,
+    "dt": 0.01
+  },
+  "bounds": {
+    "x": [
+      -13.254204659554132,
+      6.356790168168567
+    ],
+    "y": [
+      -13.30382634846018,
+      6.34417837509239
+    ],
+    "z": [
+      -13.268218665902648,
+      6.325486173452844
+    ]
+  },
+  "files": {
+    "csv": "datasets/attractors/halvorsen/halvorsen_trajectory.csv",
+    "trajectory_vtp": "datasets/attractors/halvorsen/halvorsen_trajectory.vtp",
+    "point_cloud_vtp": "datasets/attractors/halvorsen/halvorsen_point_cloud.vtp",
+    "density_vti": "datasets/attractors/halvorsen/halvorsen_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -14.823084245771948,
+      -14.875666726344386,
+      -14.835715053051088
+    ],
+    "max_bounds": [
+      7.925669754386384,
+      7.916018752976596,
+      7.892982560601284
+    ],
+    "spacing": [
+      0.7108985625049479,
+      0.7122401712287807,
+      0.7102718004266366
+    ],
+    "max_density": 28.0
+  },
+  "paraview_notes": [
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
+  ]
+}

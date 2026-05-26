@@ -1,6 +1,6 @@
 {
   "name": "rossler",
-  "created_utc": "2026-05-26T05:10:32.405952+00:00",
+  "created_utc": "2026-05-26T05:17:29.925252+00:00",
   "parameters": {
     "a": 0.2,
     "b": 0.2,
@@ -34,12 +34,33 @@
   "files": {
     "csv": "datasets/attractors/rossler/rossler_trajectory.csv",
     "trajectory_vtp": "datasets/attractors/rossler/rossler_trajectory.vtp",
-    "point_cloud_vtp": "datasets/attractors/rossler/rossler_point_cloud.vtp"
+    "point_cloud_vtp": "datasets/attractors/rossler/rossler_point_cloud.vtp",
+    "density_vti": "datasets/attractors/rossler/rossler_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -10.60769513478389,
+      -12.117021825911596,
+      -1.7374512950205698
+    ],
+    "max_bounds": [
+      12.94049509892602,
+      9.205103864830969,
+      23.455592482777693
+    ],
+    "spacing": [
+      0.7358809448034347,
+      0.6663164278357052,
+      0.7872826180561957
+    ],
+    "max_density": 70.0
   },
   "paraview_notes": [
-    "Open the VTP trajectory file in ParaView.",
-    "Apply Tube filter to make the curve visible.",
-    "Color by time or point index.",
-    "Use the point-cloud VTP for glyph-based views."
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
   ]
 }

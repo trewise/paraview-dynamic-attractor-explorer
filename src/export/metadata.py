@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 
@@ -19,10 +20,20 @@ def write_metadata(
     csv_path: str | Path,
     trajectory_vtp_path: str | Path,
     point_cloud_vtp_path: str | Path,
+    density_vti_path: str | Path | None = None,
+    density_metadata: dict[str, Any] | None = None,
 ) -> Path:
     """Write dataset metadata as JSON."""
     output = Path(path)
     output.parent.mkdir(parents=True, exist_ok=True)
+
+    files = {
+        "csv": str(csv_path),
+        "trajectory_vtp": str(trajectory_vtp_path),
+        "point_cloud_vtp": str(point_cloud_vtp_path),
+    }
+    if density_vti_path is not None:
+        files["density_vti"] = str(density_vti_path)
 
     metadata = {
         "name": system.name,
@@ -40,16 +51,14 @@ def write_metadata(
             "y": [float(states[:, 1].min()), float(states[:, 1].max())],
             "z": [float(states[:, 2].min()), float(states[:, 2].max())],
         },
-        "files": {
-            "csv": str(csv_path),
-            "trajectory_vtp": str(trajectory_vtp_path),
-            "point_cloud_vtp": str(point_cloud_vtp_path),
-        },
+        "files": files,
+        "density_volume": density_metadata or {},
         "paraview_notes": [
-            "Open the VTP trajectory file in ParaView.",
-            "Apply Tube filter to make the curve visible.",
-            "Color by time or point index.",
-            "Use the point-cloud VTP for glyph-based views.",
+            "Open the trajectory VTP file in ParaView and apply Tube filter.",
+            "Open the point-cloud VTP file for Glyph and point-sprite views.",
+            "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+            "Color trajectory by time or point_index.",
+            "Color density volume by density.",
         ],
     }
 

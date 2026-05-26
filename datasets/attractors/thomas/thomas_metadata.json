@@ -1,6 +1,6 @@
 {
   "name": "thomas",
-  "created_utc": "2026-05-26T05:10:33.470900+00:00",
+  "created_utc": "2026-05-26T05:17:32.896052+00:00",
   "parameters": {
     "b": 0.208186
   },
@@ -32,12 +32,33 @@
   "files": {
     "csv": "datasets/attractors/thomas/thomas_trajectory.csv",
     "trajectory_vtp": "datasets/attractors/thomas/thomas_trajectory.vtp",
-    "point_cloud_vtp": "datasets/attractors/thomas/thomas_point_cloud.vtp"
+    "point_cloud_vtp": "datasets/attractors/thomas/thomas_point_cloud.vtp",
+    "density_vti": "datasets/attractors/thomas/thomas_density.vti"
+  },
+  "density_volume": {
+    "resolution": 32,
+    "origin": [
+      -1.3931080577232828,
+      -1.4355028568933366,
+      -1.4152893894066447
+    ],
+    "max_bounds": [
+      4.153462978044275,
+      4.1467742449110965,
+      4.166221451547295
+    ],
+    "spacing": [
+      0.17333034486773619,
+      0.17444615943138853,
+      0.1744222137798106
+    ],
+    "max_density": 663.0
   },
   "paraview_notes": [
-    "Open the VTP trajectory file in ParaView.",
-    "Apply Tube filter to make the curve visible.",
-    "Color by time or point index.",
-    "Use the point-cloud VTP for glyph-based views."
+    "Open the trajectory VTP file in ParaView and apply Tube filter.",
+    "Open the point-cloud VTP file for Glyph and point-sprite views.",
+    "Open the density VTI file for Slice, Contour, Threshold, and Volume Rendering.",
+    "Color trajectory by time or point_index.",
+    "Color density volume by density."
   ]
 }
