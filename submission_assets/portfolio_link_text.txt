@@ -1,0 +1,3 @@
+Portfolio project: Dynamic Attractor Observatory — Advanced Scientific Visualization of Nonlinear Dynamical Systems in ParaView
+
+GitHub: https://github.com/trewise/paraview-dynamic-attractor-explorer

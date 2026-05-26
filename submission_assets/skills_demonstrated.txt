@@ -1,0 +1,13 @@
+Skills demonstrated:
+
+- ParaView scientific visualization
+- Python scientific computing
+- VTK-compatible data export
+- Nonlinear dynamical systems
+- Numerical ODE integration
+- Dataset validation
+- Scientific rendering
+- Volume visualization
+- Animation workflow
+- Technical documentation
+- Reproducible research workflow

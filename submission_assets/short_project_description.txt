@@ -1,0 +1,1 @@
+Dynamic Attractor Observatory is a scientific visualization project that generates nonlinear dynamical systems in Python and exports ParaView-ready datasets for advanced visualization. The project demonstrates trajectory rendering, density volumes, scalar fields, filtering workflows, animation, and reproducible scientific visualization.
