@@ -33,3 +33,13 @@ paraview/animations/
 
 # Logs
 *.log
+
+# ParaView generated outputs
+outputs/paraview_animation_frames/
+outputs/paraview_volume_renders/
+outputs/paraview_comparisons/
+outputs/paraview_screenshots/
+outputs/paraview_test/
+
+# Temporary review artifacts
+roadmap_refresh.diff

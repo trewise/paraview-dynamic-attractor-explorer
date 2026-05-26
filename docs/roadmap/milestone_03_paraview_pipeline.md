@@ -37,3 +37,7 @@ Build a reproducible ParaView workflow that demonstrates advanced visualization 
 - The generated datasets load correctly.
 - The project demonstrates more than simple plotting.
 - The ParaView workflow is documented clearly.
+
+## Status
+
+IN PROGRESS

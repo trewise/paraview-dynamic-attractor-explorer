@@ -33,4 +33,4 @@ Build a professional repository foundation that can support a serious scientific
 
 ## Status
 
-In progress.
+COMPLETE.

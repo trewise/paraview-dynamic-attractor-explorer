@@ -33,3 +33,7 @@ The final visuals should show:
 - Animations render correctly.
 - Images are usable in README.
 - Outputs support Handshake submission.
+
+## Status
+
+IN PROGRESS

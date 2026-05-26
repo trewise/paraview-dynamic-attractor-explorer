@@ -41,3 +41,7 @@ Each attractor will produce:
 - All outputs validate successfully.
 - Generated files load in ParaView.
 - Metadata is saved for every generated dataset.
+
+## Status
+
+COMPLETE
