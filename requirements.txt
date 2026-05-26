@@ -1,0 +1,13 @@
+numpy
+scipy
+pandas
+matplotlib
+pyvista
+vtk
+networkx
+pyyaml
+tqdm
+pytest
+black
+ruff
+jupyter

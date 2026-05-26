@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated data
+data/generated/
+data/interim/
+data/processed/**/*.vtk
+data/processed/**/*.vtp
+data/processed/**/*.vti
+data/processed/**/*.csv
+
+# Large outputs
+outputs/animations/
+outputs/screenshots/
+portfolio/videos/
+paraview/animations/
+
+# ParaView backups
+*.pvsm~
+*.bak
+
+# Logs
+*.log
