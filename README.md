@@ -14,31 +14,45 @@ This project demonstrates nonlinear simulation, VTK/ParaView-compatible exports,
 
 ---
 
-## Animated GIF Preview Gallery
+## Animation Preview Gallery
+
+The repository includes GIF and MP4 flythrough animations. Static previews are shown below for fast GitHub loading.
 
 ### Lorenz Flythrough
 
-![Lorenz flythrough](portfolio/videos/lorenz_flythrough.gif)
+![Lorenz preview](portfolio/screenshots/lorenz_preview.png)
+
+[Open Lorenz GIF](portfolio/videos/lorenz_flythrough.gif) | [Open Lorenz MP4](portfolio/videos/lorenz_flythrough.mp4)
 
 ### Rossler Flythrough
 
-![Rossler flythrough](portfolio/videos/rossler_flythrough.gif)
+![Rossler preview](portfolio/screenshots/rossler_preview.png)
+
+[Open Rossler GIF](portfolio/videos/rossler_flythrough.gif) | [Open Rossler MP4](portfolio/videos/rossler_flythrough.mp4)
 
 ### Thomas Flythrough
 
-![Thomas flythrough](portfolio/videos/thomas_flythrough.gif)
+![Thomas preview](portfolio/screenshots/thomas_preview.png)
+
+[Open Thomas GIF](portfolio/videos/thomas_flythrough.gif) | [Open Thomas MP4](portfolio/videos/thomas_flythrough.mp4)
 
 ### Aizawa Flythrough
 
-![Aizawa flythrough](portfolio/videos/aizawa_flythrough.gif)
+![Aizawa preview](portfolio/screenshots/aizawa_preview.png)
+
+[Open Aizawa GIF](portfolio/videos/aizawa_flythrough.gif) | [Open Aizawa MP4](portfolio/videos/aizawa_flythrough.mp4)
 
 ### Chen Flythrough
 
-![Chen flythrough](portfolio/videos/chen_flythrough.gif)
+![Chen preview](portfolio/screenshots/chen_preview.png)
+
+[Open Chen GIF](portfolio/videos/chen_flythrough.gif) | [Open Chen MP4](portfolio/videos/chen_flythrough.mp4)
 
 ### Four-Wing Flythrough
 
-![Four-Wing flythrough](portfolio/videos/four_wing_flythrough.gif)
+![Four-Wing preview](portfolio/screenshots/four_wing_preview.png)
+
+[Open Four-Wing GIF](portfolio/videos/four_wing_flythrough.gif) | [Open Four-Wing MP4](portfolio/videos/four_wing_flythrough.mp4)
 
 ---
 
