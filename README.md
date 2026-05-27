@@ -12,23 +12,61 @@ This project demonstrates nonlinear simulation, VTK/ParaView-compatible exports,
 
 ![Multi-attractor comparison](portfolio/screenshots/comparison_all_attractors_comparison_paraview.png)
 
-### Lorenz Attractor
+---
 
-![Lorenz preview](portfolio/screenshots/lorenz_preview.png)
+## Animated GIF Preview Gallery
+
+### Lorenz Flythrough
 
 ![Lorenz flythrough](portfolio/videos/lorenz_flythrough.gif)
 
-### Rossler Attractor
-
-![Rossler preview](portfolio/screenshots/rossler_preview.png)
+### Rossler Flythrough
 
 ![Rossler flythrough](portfolio/videos/rossler_flythrough.gif)
 
-### Thomas Attractor
+### Thomas Flythrough
+
+![Thomas flythrough](portfolio/videos/thomas_flythrough.gif)
+
+### Aizawa Flythrough
+
+![Aizawa flythrough](portfolio/videos/aizawa_flythrough.gif)
+
+### Chen Flythrough
+
+![Chen flythrough](portfolio/videos/chen_flythrough.gif)
+
+### Four-Wing Flythrough
+
+![Four-Wing flythrough](portfolio/videos/four_wing_flythrough.gif)
+
+---
+
+## Static Screenshot Gallery
+
+### Lorenz Trajectory
+
+![Lorenz preview](portfolio/screenshots/lorenz_preview.png)
+
+### Rossler Trajectory
+
+![Rossler preview](portfolio/screenshots/rossler_preview.png)
+
+### Thomas Trajectory
 
 ![Thomas preview](portfolio/screenshots/thomas_preview.png)
 
-![Thomas flythrough](portfolio/videos/thomas_flythrough.gif)
+### Lorenz Density Volume
+
+![Lorenz density](portfolio/screenshots/density_lorenz_paraview_density.png)
+
+### Rossler Density Volume
+
+![Rossler density](portfolio/screenshots/density_rossler_paraview_density.png)
+
+### Thomas Density Volume
+
+![Thomas density](portfolio/screenshots/density_thomas_paraview_density.png)
 
 ---
 
@@ -45,6 +83,7 @@ Run:
 
     python tools/validate_repository.py
     python tools/project_stats.py
+    rm -rf .pytest_cache
     pytest
 
 Expected result:
