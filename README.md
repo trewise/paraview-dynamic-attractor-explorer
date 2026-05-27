@@ -8,79 +8,26 @@ This project demonstrates nonlinear simulation, VTK/ParaView-compatible exports,
 
 ## Visual Preview
 
+### Trajectory Gallery
+
+![Trajectory gallery](portfolio/galleries/trajectory_gallery_contact_sheet.png)
+
+### Density Volume Gallery
+
+![Density gallery](portfolio/galleries/density_gallery_contact_sheet.png)
+
 ### Multi-Attractor Comparison
 
-![Multi-attractor comparison](portfolio/screenshots/comparison_all_attractors_comparison_paraview.png)
+![Comparison gallery](portfolio/galleries/comparison_gallery_contact_sheet.png)
 
----
+### Example Flythrough Animations
 
-## Animation Preview Gallery
-
-The repository includes GIF and MP4 flythrough animations. Static previews are shown below for fast GitHub loading.
-
-### Lorenz Flythrough
-
-![Lorenz preview](portfolio/screenshots/lorenz_preview.png)
-
-[Open Lorenz GIF](portfolio/videos/lorenz_flythrough.gif) | [Open Lorenz MP4](portfolio/videos/lorenz_flythrough.mp4)
-
-### Rossler Flythrough
-
-![Rossler preview](portfolio/screenshots/rossler_preview.png)
-
-[Open Rossler GIF](portfolio/videos/rossler_flythrough.gif) | [Open Rossler MP4](portfolio/videos/rossler_flythrough.mp4)
-
-### Thomas Flythrough
-
-![Thomas preview](portfolio/screenshots/thomas_preview.png)
-
-[Open Thomas GIF](portfolio/videos/thomas_flythrough.gif) | [Open Thomas MP4](portfolio/videos/thomas_flythrough.mp4)
-
-### Aizawa Flythrough
-
-![Aizawa preview](portfolio/screenshots/aizawa_preview.png)
-
-[Open Aizawa GIF](portfolio/videos/aizawa_flythrough.gif) | [Open Aizawa MP4](portfolio/videos/aizawa_flythrough.mp4)
-
-### Chen Flythrough
-
-![Chen preview](portfolio/screenshots/chen_preview.png)
-
-[Open Chen GIF](portfolio/videos/chen_flythrough.gif) | [Open Chen MP4](portfolio/videos/chen_flythrough.mp4)
-
-### Four-Wing Flythrough
-
-![Four-Wing preview](portfolio/screenshots/four_wing_preview.png)
-
-[Open Four-Wing GIF](portfolio/videos/four_wing_flythrough.gif) | [Open Four-Wing MP4](portfolio/videos/four_wing_flythrough.mp4)
-
----
-
-## Static Screenshot Gallery
-
-### Lorenz Trajectory
-
-![Lorenz preview](portfolio/screenshots/lorenz_preview.png)
-
-### Rossler Trajectory
-
-![Rossler preview](portfolio/screenshots/rossler_preview.png)
-
-### Thomas Trajectory
-
-![Thomas preview](portfolio/screenshots/thomas_preview.png)
-
-### Lorenz Density Volume
-
-![Lorenz density](portfolio/screenshots/density_lorenz_paraview_density.png)
-
-### Rossler Density Volume
-
-![Rossler density](portfolio/screenshots/density_rossler_paraview_density.png)
-
-### Thomas Density Volume
-
-![Thomas density](portfolio/screenshots/density_thomas_paraview_density.png)
+- [Lorenz GIF](portfolio/videos/lorenz_flythrough.gif) | [Lorenz MP4](portfolio/videos/lorenz_flythrough.mp4)
+- [Rossler GIF](portfolio/videos/rossler_flythrough.gif) | [Rossler MP4](portfolio/videos/rossler_flythrough.mp4)
+- [Thomas GIF](portfolio/videos/thomas_flythrough.gif) | [Thomas MP4](portfolio/videos/thomas_flythrough.mp4)
+- [Aizawa GIF](portfolio/videos/aizawa_flythrough.gif) | [Aizawa MP4](portfolio/videos/aizawa_flythrough.mp4)
+- [Chen GIF](portfolio/videos/chen_flythrough.gif) | [Chen MP4](portfolio/videos/chen_flythrough.mp4)
+- [Four-Wing GIF](portfolio/videos/four_wing_flythrough.gif) | [Four-Wing MP4](portfolio/videos/four_wing_flythrough.mp4)
 
 ---
 
@@ -139,7 +86,7 @@ Generated media is stored in:
 - outputs/animations/
 - outputs/flythrough_frames/
 - portfolio/videos/
-- portfolio/gallery/
+- portfolio/galleries/
 
 ---
 
@@ -182,8 +129,6 @@ Generated media is stored in:
 - QUICKSTART.md
 - INSTALL.md
 - docs/gallery.md
-- docs/tutorials/getting_started.md
-- docs/tutorials/reproduce_results.md
 - docs/workflows/PARAVIEW_WORKFLOW_GUIDE.md
 - portfolio/report/final_portfolio_writeup.md
 
