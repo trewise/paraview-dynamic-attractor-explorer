@@ -1,8 +1,8 @@
 # ParaView Dynamic Attractor Explorer
 
-A scientific visualization portfolio project that generates chaotic attractor datasets in Python and renders them with ParaView automation.
+A ParaView-focused scientific visualization portfolio project for chaotic attractor systems.
 
-This project demonstrates nonlinear simulation, VTK/ParaView-compatible exports, ParaView state-file workflows, ParaView-ready datasets, rendered screenshot galleries, and reproducible validation tools.
+This project demonstrates Python-based nonlinear simulation, VTK/ParaView-compatible data export, ParaView state files, ParaView Python automation, and rendered scientific visualization galleries.
 
 ---
 
@@ -16,22 +16,43 @@ This project demonstrates nonlinear simulation, VTK/ParaView-compatible exports,
 
 ![Density gallery](portfolio/galleries/density_gallery_contact_sheet.png)
 
-### Multi-Attractor Comparison
+---
 
-![Comparison gallery](portfolio/galleries/comparison_gallery_contact_sheet.png)
+## What This Project Demonstrates
+
+- Chaotic attractor simulation in Python
+- RK4 numerical integration
+- CSV, VTP, VTI, and metadata export workflows
+- ParaView-ready trajectory and density datasets
+- ParaView state files
+- ParaView Python scripts and traces
+- ParaView macro examples
+- Tube, Glyph, Slice, Contour, Threshold, Clip, and Volume Rendering workflows
+- Rendered contact-sheet galleries
+- Automated repository validation and tests
 
 ---
 
-## Quick Start: Reviewer Path
+## Quick Start
 
-Run:
+Clone the repository:
 
-    git clone https://github.com/trewise/paraview-dynamic-attractor-explorer.git
+    git clone -b clean-release https://github.com/trewise/paraview-dynamic-attractor-explorer.git
+
+Enter the project:
+
     cd paraview-dynamic-attractor-explorer
+
+Create and activate a virtual environment:
 
     python3 -m venv .venv
     source .venv/bin/activate
+
+Install dependencies:
+
     pip install -r requirements.txt
+
+Run validation and tests:
 
     python tools/validate_repository.py
     python tools/project_stats.py
@@ -40,13 +61,14 @@ Run:
 
 Expected result:
 
-- repository validation passes
-- project statistics print
-- tests pass
+    Repository structure validation passed.
+    13 passed
+
+Your local stats may include generated PNG, GIF, or MP4 files already present in the working tree.
 
 ---
 
-## Quick ParaView Verification
+## Quick ParaView Render Test
 
 For Ubuntu systems with ParaView Python bindings installed:
 
@@ -65,69 +87,27 @@ Expected output:
 
 ---
 
-## Full Portfolio Render
-
-The full render workflow creates portfolio-scale flythrough frames and animation exports when run locally.
-
-    export PYTHONPATH=/usr/lib/python3/dist-packages:$PYTHONPATH
-    bash scripts/render/render_missing_flythroughs_safe.sh
-
----
-
-## Project Highlights
-
-- 11 nonlinear attractor systems
-- RK4 numerical integration
-- CSV, VTP, VTI, and JSON metadata exports
-- ParaView-ready trajectory, point-cloud, and density-volume datasets
-- ParaView state files
-- ParaView Python scripts and traces
-- ParaView macro examples
-- Tube, Glyph, Slice, Contour, Threshold, Clip, and Volume Rendering examples
-- Color transfer functions
-- Parameter sweep visualization
-- Multi-attractor comparison visualization
-- Automated validation and project statistics
-
----
-
 ## Repository Structure
 
-    src/                         Core simulation and export code
-    scripts/                     Build and rendering automation
-    tools/                       Validation and reporting tools
-    tests/                       Unit and integration tests
-    datasets/attractors/         Generated attractor datasets
-    paraview/state_files/        Reusable ParaView state files
-    paraview/python_scripts/     ParaView rendering scripts
-    paraview/macros/             ParaView macro examples
-    outputs/                     Generated render outputs
-    portfolio/                   Portfolio-ready gallery and report assets
-    docs/                        Technical documentation
+    src/                     simulation and export code
+    datasets/attractors/     ParaView-ready attractor datasets
+    paraview/                state files, Python scripts, traces, and macros
+    portfolio/galleries/     rendered gallery contact sheets
+    scripts/                 build and rendering automation
+    tools/                   validation and project statistics
+    tests/                   unit and integration tests
+    docs/                    focused project documentation
 
 ---
 
-## Documentation
+## Reviewer Notes
 
-- QUICKSTART.md
-- INSTALL.md
-- docs/gallery.md
-- docs/workflows/PARAVIEW_WORKFLOW_GUIDE.md
-- portfolio/report/final_portfolio_writeup.md
+The repository includes generated gallery images for immediate inspection.
 
----
-
-## Skills Demonstrated
-
-- Python scientific computing
-- Nonlinear dynamical systems
-- Numerical ODE simulation
-- VTK/ParaView export formats
-- ParaView state-file workflows
-- ParaView Python automation
-- Scientific rendering
-- Testing and validation
-- Technical documentation
+Full animation generation may require:
+- local ParaView installation
+- OpenGL/Xvfb support
+- additional system configuration
 
 ---
 
