@@ -2,7 +2,7 @@
 
 A scientific visualization portfolio project that generates chaotic attractor datasets in Python and renders them with ParaView automation.
 
-This project demonstrates nonlinear simulation, VTK/ParaView-compatible exports, ParaView state-file workflows, scripted visualization filters, screenshots, GIF previews, and MP4 flythrough animations.
+This project demonstrates nonlinear simulation, VTK/ParaView-compatible exports, ParaView state-file workflows, ParaView-ready datasets, rendered screenshot galleries, and reproducible validation tools.
 
 ---
 
@@ -19,15 +19,6 @@ This project demonstrates nonlinear simulation, VTK/ParaView-compatible exports,
 ### Multi-Attractor Comparison
 
 ![Comparison gallery](portfolio/galleries/comparison_gallery_contact_sheet.png)
-
-### Example Flythrough Animations
-
-- [Lorenz GIF](portfolio/videos/lorenz_flythrough.gif) | [Lorenz MP4](portfolio/videos/lorenz_flythrough.mp4)
-- [Rossler GIF](portfolio/videos/rossler_flythrough.gif) | [Rossler MP4](portfolio/videos/rossler_flythrough.mp4)
-- [Thomas GIF](portfolio/videos/thomas_flythrough.gif) | [Thomas MP4](portfolio/videos/thomas_flythrough.mp4)
-- [Aizawa GIF](portfolio/videos/aizawa_flythrough.gif) | [Aizawa MP4](portfolio/videos/aizawa_flythrough.mp4)
-- [Chen GIF](portfolio/videos/chen_flythrough.gif) | [Chen MP4](portfolio/videos/chen_flythrough.mp4)
-- [Four-Wing GIF](portfolio/videos/four_wing_flythrough.gif) | [Four-Wing MP4](portfolio/videos/four_wing_flythrough.mp4)
 
 ---
 
@@ -76,17 +67,10 @@ Expected output:
 
 ## Full Portfolio Render
 
-The full render workflow creates portfolio-scale flythrough frames, GIF previews, and MP4 exports.
+The full render workflow creates portfolio-scale flythrough frames and animation exports when run locally.
 
     export PYTHONPATH=/usr/lib/python3/dist-packages:$PYTHONPATH
     bash scripts/render/render_missing_flythroughs_safe.sh
-
-Generated media is stored in:
-
-- outputs/animations/
-- outputs/flythrough_frames/
-- portfolio/videos/
-- portfolio/galleries/
 
 ---
 
@@ -102,8 +86,7 @@ Generated media is stored in:
 - Tube, Glyph, Slice, Contour, Threshold, Clip, and Volume Rendering examples
 - Color transfer functions
 - Parameter sweep visualization
-- Multi-attractor comparison animation
-- GIF and MP4 animation exports
+- Multi-attractor comparison visualization
 - Automated validation and project statistics
 
 ---
@@ -118,7 +101,7 @@ Generated media is stored in:
     paraview/state_files/        Reusable ParaView state files
     paraview/python_scripts/     ParaView rendering scripts
     paraview/macros/             ParaView macro examples
-    outputs/                     Generated images, frames, GIFs, and MP4s
+    outputs/                     Generated render outputs
     portfolio/                   Portfolio-ready gallery and report assets
     docs/                        Technical documentation
 
@@ -143,7 +126,6 @@ Generated media is stored in:
 - ParaView state-file workflows
 - ParaView Python automation
 - Scientific rendering
-- Animation export
 - Testing and validation
 - Technical documentation
 
